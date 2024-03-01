@@ -25,7 +25,7 @@ fi
 
 DOCKER_IMAGE=${DOCKER_IMAGE:-rootgg/plik}
 DOCKER_TAG=${TAG:-dev}
-TARGETS=${TARGETS:-windows/386,linux/arm}
+TARGETS=${TARGETS:-windows/amd64,linux/arm}
 
 if [[ -n "$CLIENT_TARGETS" ]]; then
   BUILD_ARGS="$BUILD_ARGS --build-arg CLIENT_TARGETS=$CLIENT_TARGETS"
