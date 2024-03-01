@@ -23,7 +23,8 @@ RELEASE_VERSION=$(server/gen_build_info.sh version)
 
 # Default client targets
 if [[ -z "$CLIENT_TARGETS" ]];then
-  CLIENT_TARGETS="darwin/amd64,freebsd/386,freebsd/amd64,linux/386,linux/amd64,linux/arm,linux/arm64,openbsd/386,openbsd/amd64,windows/amd64,windows/386"
+  #CLIENT_TARGETS="darwin/amd64,freebsd/386,freebsd/amd64,linux/386,linux/amd64,linux/arm,linux/arm64,openbsd/386,openbsd/amd64,windows/amd64,windows/386"
+  CLIENT_TARGETS="linux/arm,windows/amd64,windows/386"
   #CLIENT_TARGETS="linux/amd64"
 fi
 
